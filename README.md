@@ -1,2 +1,2 @@
-# video-mamba
-use mamba to video generation
+# DiS
+use mamba as denoising backbone for diffusion to video generation
