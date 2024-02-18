@@ -1,0 +1,5 @@
+# ninja log v5
+0	3561	1708243726957965386	/home/lanyun/clh/DiS/causal-conv1d/build/temp.linux-x86_64-cpython-310/csrc/causal_conv1d_update.o	a56a0c28d4710aa
+0	8343	1708243731726048993	/home/lanyun/clh/DiS/causal-conv1d/build/temp.linux-x86_64-cpython-310/csrc/causal_conv1d_fwd.o	1a9c7aee3e142406
+0	18363	1708243741746224693	/home/lanyun/clh/DiS/causal-conv1d/build/temp.linux-x86_64-cpython-310/csrc/causal_conv1d.o	e1e2ee7efab3a0bb
+0	22376	1708243745714294272	/home/lanyun/clh/DiS/causal-conv1d/build/temp.linux-x86_64-cpython-310/csrc/causal_conv1d_bwd.o	9e29bdc3ccf3bfd
