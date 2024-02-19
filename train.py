@@ -161,7 +161,7 @@ def main(args):
         )
     elif args.dataset_type == "imagenet": 
         dataset = torchvision.datasets.ImageFolder(
-            os.path.join(args.data_path, 'train'),
+            args.data_path,
             transform=transform,
         )
     else:
@@ -321,7 +321,7 @@ if __name__ == "__main__":
     parser.add_argument("--num-workers", type=int, default=8)
     parser.add_argument("--epochs", type=int, default=1000)
     parser.add_argument("--ckpt-every", type=int, default=5000)
-    parser.add_argument("--global-batch-size", type=int, default=128)
+    parser.add_argument("--global-batch-size", type=int, default=64)
     parser.add_argument("--global-seed", type=int, default=420) 
 
     parser.add_argument('--lr', type=float, default=1e-4,) 

@@ -34,25 +34,22 @@ We provide a training script for DiS in [`train.py`](train.py). This script can 
 To launch DiS-H/2 (512x512) in the latent space training with `N` GPUs on one node:
 
 ```bash
-torchrun --nnodes=1 --nproc_per_node=N train.py \
+torchrun --nnodes=1 --nproc_per_node=8 train.py \
 --model DiS-H/2 \
 --dataset-type imagenet \
---data-path /path/to/imagenet/train \
---image-size 512 \
---latent_space True \
+--data-path imageNet1k \
+--image-size 64 \
 --task-type class-cond \
---vae_path /path/to/vae \
---num-classes 1000 
+--num-classes 999
 ```
 
 To launch DiS-S/2 (32x32) in the pixel space training with `N` GPUs on one node:
 ```bash
-torchrun --nnodes=1 --nproc_per_node=N train.py \
+torchrun --nnodes=1 --nproc_per_node=8 train.py \
 --model DiS-S/2 \
---dataset-type celeba \
---data-path /path/to/imagenet/train \
+--data-path cifar10_data \
+--dataset-type cifar-10 \
 --image-size 32 \
---latent_space False \
 --task-type uncond 
 ```
 
